@@ -1,4 +1,17 @@
 body {
   font-family: 'Sintony', sans-serif;
-  color: $dark-font-color;
+  color: $main-font-color;
+}
+
+.whole-container {
+  max-width: 780px;
+}
+
+.top-container {
+  border-style: solid;
+}
+
+div {
+  //border-style: solid;
+  //color: red;
 }

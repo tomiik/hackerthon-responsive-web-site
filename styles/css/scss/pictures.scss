@@ -1,0 +1,127 @@
+#pictures {
+  height: 400px;
+  background-color: $main-color;
+  background-image: url("../../images/background_pictures_purple.jpg");
+
+  .title{
+    width: auto;
+    text-transform: uppercase;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: 0.8em;
+
+    p {
+      margin-left: 6em;
+    }
+  }
+
+  .container-pic-card {
+    display: flex;
+    margin-left: -90px;
+  }
+
+  .pic-card{
+    width: 200px;
+    height: 280px;
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 6px;
+
+    .image-container{
+      position: relative;
+
+      img {
+        width: 100%;
+        margin-bottom: 0;
+      }
+
+      .like {
+        color: $font-color-light;
+        font-size: 0.8em;
+        position: absolute;
+        bottom: 0;
+        right:0;
+        margin-right: 1em;
+        text-shadow: 1px 1px 1px #000000;
+      }
+    }
+
+    .pic-article {
+      flex: 1;
+      position: relative;
+      margin-top: -1px;
+      background-color: $pic-card-color;
+
+      .diamond-mark{
+        background-color: $main-color;
+        position: absolute;
+        top:0;
+        left:0;
+        margin-top: -5px;
+        width: 15px;
+        height: 15px;
+        transform-origin: bottom left;
+        transform: rotate(-45deg);
+      }
+
+      h3 {
+        font-size: 1.4em;
+        margin-top: -1px;
+        padding-left: 1em;
+        padding-top: 1em;
+      }
+
+      p {
+        padding: 0 2em;
+        font-size: 0.7em;
+      }
+
+      .comment {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      .ellipsis{
+        text-align:center;
+
+        i {
+          position: absolute;
+          font-size: 1.5em;
+          padding: 0.7em;
+          width: 35px;
+          height: 30px;
+          bottom: 0;
+          right: 0;
+          color: $font-color-dark;
+          background-color: $ellipsis-background-color;
+
+        }
+      }
+    }
+  }
+
+  .scroll-right-btn {
+    background-color: white;
+    opacity: 0.4;
+    display: inline-block;
+    text-align: center;
+    font-size: 2em;
+    color: $font-color-light;
+    margin-left: 0.3em;
+    padding-left: 0.2em;
+    width: 1em;
+    position: relative;
+    border-radius: 4px;
+
+    .chevron {
+      position: absolute;
+    	top: 50%;
+      margin-top: -1em;
+
+      i {
+        color: $font-color-dark;
+      }
+    }
+  }
+}
