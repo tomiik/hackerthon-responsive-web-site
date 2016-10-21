@@ -1,6 +1,6 @@
 body {
-  font-family: 'Sintony', sans-serif;
-  color: #aaa; }
+  font-family: 'Catamaran', sans-serif;
+  color: #fff; }
 
 .whole-container {
   max-width: 780px; }
@@ -14,46 +14,77 @@ body {
   #top .container-row .leftbar {
     position: relative;
     text-align: center;
-    background-color: #0F001D;
+    background-color: #166eff;
     height: auto;
-    width: 35px; }
+    width: 35px;
+    box-shadow: 2px 0px 2px #000;
+    z-index: 2; }
     #top .container-row .leftbar .menu-btn {
-      font-size: 0.8em;
-      margin-top: 1.6em; }
+      font-size: 1.5em;
+      margin-top: 0.3em; }
     #top .container-row .leftbar .menu-message {
       position: absolute;
-      font-size: 0.47em;
+      font-size: 2em;
       font-weight: bold;
-      text-transform: uppercase;
       white-space: nowrap;
       bottom: 0;
       right: 0;
-      left: 0;
-      margin-left: 2.2em;
-      margin-bottom: 8.8em;
+      left: 50%;
+      margin-left: -0.65em;
+      margin-bottom: -1.5em;
       transform-origin: left top;
       transform: rotate(270deg); }
       #top .container-row .leftbar .menu-message span {
-        font-weight: normal;
-        font-size: 0.8em;
-        margin-left: 1em; }
+        font-weight: 100;
+        font-size: 0.4em;
+        margin-left: 0.5em; }
     #top .container-row .leftbar .chevron {
       position: absolute;
-      font-size: 0.5em;
+      font-size: 1em;
       bottom: 0;
       left: 0;
       right: 0;
-      margin-bottom: 3.5em; }
+      margin-bottom: 0.4em; }
   #top .container-row .image-container {
     position: relative;
     background-color: blue;
-    flex: 1; }
+    flex: 1;
+    z-index: 1;
+    box-shadow: 0px 0px 2px #000; }
     #top .container-row .image-container img {
       width: 100%;
       padding: 0;
       margin: 0; }
+    #top .container-row .image-container .on-the-pic {
+      text-align: center;
+      font-weight: 900; }
+      #top .container-row .image-container .on-the-pic .name {
+        line-height: 1.2em;
+        position: absolute;
+        color: #166eff;
+        font-size: 9em;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-top: -1.4em;
+        opacity: 0.9;
+        text-shadow: 4px 4px 8px #000; }
+      #top .container-row .image-container .on-the-pic .icon {
+        position: absolute;
+        color: #333;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-top: -0.7em;
+        margin-left: 0.2em;
+        font-size: 20em;
+        opacity: 0.8;
+        transform: rotate(-20deg); }
     #top .container-row .image-container .date {
       position: absolute;
+      text-align: right;
       font-width: bold;
       font-size: 0.5em;
       margin-right: 4em;
@@ -62,8 +93,8 @@ body {
       bottom: 0; }
     #top .container-row .image-container .article {
       position: absolute;
-      left: 4.5em;
-      bottom: 2em;
+      left: 2em;
+      bottom: 1.2em;
       width: 20em; }
       #top .container-row .image-container .article h3 {
         font-size: 1em; }
@@ -71,40 +102,43 @@ body {
         font-size: 0.5em; }
     #top .container-row .image-container .mail {
       position: absolute;
-      font-size: 0.9em;
-      margin-right: 2em;
-      margin-top: 1.4em;
+      font-size: 2em;
+      margin-right: 0.5em;
+      margin-top: 0.2em;
       right: 0;
       top: 0; }
 
 #pictures {
-  height: 400px;
-  background-color: #0F001D;
-  background-image: url("../../images/background_pictures_purple.jpg"); }
+  height: 350px;
+  background-color: #166eff;
+  background-image: url("../../images/teachers.jpg"); }
   #pictures .title {
+    color: #333;
     width: auto;
     text-transform: uppercase;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    font-size: 0.8em; }
+    padding-top: 0.5em;
+    font-size: 2em;
+    font-weight: 700;
+    text-shadow: 5px 5px 4px #555; }
     #pictures .title p {
-      margin-left: 6em; }
+      margin-left: 1em; }
   #pictures .container-pic-card {
     display: flex;
-    margin-left: -90px; }
+    margin-left: -190px; }
   #pictures .pic-card {
     width: 200px;
     height: 280px;
     display: flex;
     flex-flow: column wrap;
-    margin-left: 6px; }
+    margin-left: 12px;
+    border-radius: 30px; }
     #pictures .pic-card .image-container {
       position: relative; }
       #pictures .pic-card .image-container img {
         width: 100%;
         margin-bottom: 0; }
       #pictures .pic-card .image-container .like {
-        color: #eee;
+        color: #fff;
         font-size: 0.8em;
         position: absolute;
         bottom: 0;
@@ -115,9 +149,11 @@ body {
       flex: 1;
       position: relative;
       margin-top: -1px;
-      background-color: #fff; }
+      background-color: #fff;
+      color: #333;
+      opacity: 0.9; }
       #pictures .pic-card .pic-article .diamond-mark {
-        background-color: #0F001D;
+        background-color: #166eff;
         position: absolute;
         top: 0;
         left: 0;
@@ -127,17 +163,20 @@ body {
         transform-origin: bottom left;
         transform: rotate(-45deg); }
       #pictures .pic-card .pic-article h3 {
-        font-size: 1.4em;
+        font-size: 1.5em;
         margin-top: -1px;
         padding-left: 1em;
         padding-top: 1em; }
       #pictures .pic-card .pic-article p {
-        padding: 0 2em;
-        font-size: 0.7em; }
-      #pictures .pic-card .pic-article .comment {
-        position: absolute;
-        bottom: 0;
-        left: 0; }
+        font-size: 0.8em; }
+      #pictures .pic-card .pic-article .description {
+        padding: 0 3em;
+        margin-top: -0.5em; }
+      #pictures .pic-card .pic-article .subject {
+        margin-left: 2em;
+        margin-top: -0.5em;
+        font-size: 0.9em;
+        font-weight: 200; }
       #pictures .pic-card .pic-article .ellipsis {
         text-align: center; }
         #pictures .pic-card .pic-article .ellipsis i {
@@ -156,7 +195,7 @@ body {
     display: inline-block;
     text-align: center;
     font-size: 2em;
-    color: #eee;
+    color: #fff;
     margin-left: 0.3em;
     padding-left: 0.2em;
     width: 1em;
@@ -168,5 +207,98 @@ body {
       margin-top: -1em; }
       #pictures .scroll-right-btn .chevron i {
         color: #333; }
+
+#why .container-row {
+  display: inline-flex;
+  flex-flow: row nowrap; }
+  #why .container-row .leftbar {
+    position: relative;
+    text-align: center;
+    background-color: #166eff;
+    height: auto;
+    width: 35px;
+    box-shadow: 2px 0px 2px #000;
+    z-index: 2; }
+    #why .container-row .leftbar .menu-btn {
+      font-size: 1.5em;
+      margin-top: 0.3em; }
+    #why .container-row .leftbar .menu-message {
+      position: absolute;
+      font-size: 2em;
+      font-weight: bold;
+      white-space: nowrap;
+      bottom: 0;
+      right: 0;
+      left: 50%;
+      margin-left: -0.65em;
+      margin-bottom: -1.5em;
+      transform-origin: left top;
+      transform: rotate(270deg); }
+      #why .container-row .leftbar .menu-message span {
+        font-weight: 100;
+        font-size: 0.4em;
+        margin-left: 0.5em; }
+  #why .container-row .image-container {
+    position: relative;
+    background-color: blue;
+    flex: 1;
+    z-index: 1;
+    box-shadow: 0px 0px 2px #000; }
+    #why .container-row .image-container img {
+      width: 100%;
+      padding: 0;
+      margin: 0; }
+    #why .container-row .image-container .on-the-pic {
+      text-align: center;
+      font-weight: 900; }
+      #why .container-row .image-container .on-the-pic .name {
+        line-height: 1.2em;
+        position: absolute;
+        color: #fff;
+        font-size: 9em;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-top: -1.4em;
+        opacity: 0.9;
+        text-shadow: 4px 4px 1px #000; }
+      #why .container-row .image-container .on-the-pic .icon {
+        position: absolute;
+        color: #166eff;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-top: -0.7em;
+        margin-left: 0.2em;
+        font-size: 25em;
+        opacity: 0.6; }
+    #why .container-row .image-container .date {
+      position: absolute;
+      text-align: right;
+      font-width: bold;
+      font-size: 0.5em;
+      margin-right: 4em;
+      margin-bottom: 6em;
+      right: 0;
+      bottom: 0; }
+    #why .container-row .image-container .article {
+      position: absolute;
+      color: #333;
+      left: 2em;
+      bottom: 1.2em;
+      width: 20em; }
+      #why .container-row .image-container .article h3 {
+        font-size: 1em; }
+      #why .container-row .image-container .article p {
+        font-size: 0.5em; }
+    #why .container-row .image-container .mail {
+      position: absolute;
+      font-size: 2em;
+      margin-right: 0.5em;
+      margin-top: 0.2em;
+      right: 0;
+      top: 0; }
 
 /*# sourceMappingURL=app.css.map */

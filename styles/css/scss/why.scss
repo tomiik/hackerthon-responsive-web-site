@@ -1,4 +1,4 @@
-#top{
+#why{
   .container-row {
     display: inline-flex;
     flex-flow: row nowrap;
@@ -38,14 +38,6 @@
         }
       }
 
-      .chevron {
-        position: absolute;
-        font-size: 1em;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin-bottom: 0.4em;
-      }
     }
 
     .image-container{
@@ -70,7 +62,7 @@
         .name {
           line-height: 1.2em;
           position: absolute;
-          color: #166eff;
+          color: #fff;
           font-size: 9em;
           top:50%;
           left:0;
@@ -78,22 +70,21 @@
           margin: 0 auto;
           margin-top: -1.4em;
           opacity: 0.9;
-          text-shadow: 4px 4px 8px #000;
+          text-shadow: 4px 4px 1px #000;
 
         }
 
         .icon {
           position: absolute;
-          color: $font-color-dark;
+          color: $main-color;
           top:50%;
           left:0;
           right: 0;
           margin: 0 auto;
           margin-top: -0.7em;
           margin-left: 0.2em;
-          font-size: 20em;
-          opacity: 0.8;
-          transform: rotate(-20deg);
+          font-size: 25em;
+          opacity: 0.6;
         }
       }
 
@@ -112,6 +103,7 @@
 
       .article {
         position: absolute;
+        color: $font-color-dark;
         left: 2em;
         bottom: 1.2em;
         width: 20em;
