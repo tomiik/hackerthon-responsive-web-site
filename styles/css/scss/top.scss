@@ -1,0 +1,98 @@
+#top{
+
+  .container-row {
+    display: flex;
+    flex-flow: row nowrap;
+
+    .leftbar {
+      position: relative;
+      text-align: center;
+      background-color: $menu-color;
+      height: auto;
+      float: left;
+      width: 2.8em;
+
+      .menu-btn {
+        font-size: 0.8em;
+        margin-top: 1.6em;
+      }
+
+      .menu-message {
+        position:absolute;
+        font-size: 0.47em;
+        font-weight: bold;
+        text-transform: uppercase;
+        white-space: nowrap;
+        bottom:0;
+        right:0;
+        left: 0;
+        margin-left: 2.2em;
+        margin-bottom: 8.8em;
+        transform-origin: left top;
+        transform: rotate(270deg);
+
+        & span {
+          font-weight: normal;
+          font-size: 0.8em;
+          margin-left: 1em;
+        }
+      }
+
+      .chevron {
+        position: absolute;
+        font-size: 0.5em;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 3.5em;
+      }
+    }
+
+    .image-container{
+      float: left;
+      position: relative;
+      background-color: blue;
+
+      img {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: auto;
+      }
+
+      .date {
+        position: absolute;
+        font-width: bold;
+        font-size: 0.5em;
+        margin-right: 4em;
+        margin-bottom: 6em;
+        right: 0;
+        bottom: 0;
+      }
+
+      .article {
+        position: absolute;
+        left: 4.5em;
+        bottom: 2em;
+        width: 20em;
+
+        h3 {
+          font-size: 1em;
+        }
+
+        p {
+          font-size: 0.5em;
+        }
+      }
+
+      .mail {
+        position: absolute;
+        font-size: 0.9em;
+        margin-right: 2em;
+        margin-top: 1.4em;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+}

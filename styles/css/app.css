@@ -2,4 +2,75 @@ body {
   font-family: 'Sintony', sans-serif;
   color: #c0c4c7; }
 
+#top .container-row {
+  display: flex;
+  flex-flow: row nowrap; }
+  #top .container-row .leftbar {
+    position: relative;
+    text-align: center;
+    background-color: #0F001D;
+    height: auto;
+    float: left;
+    width: 2.8em; }
+    #top .container-row .leftbar .menu-btn {
+      font-size: 0.8em;
+      margin-top: 1.6em; }
+    #top .container-row .leftbar .menu-message {
+      position: absolute;
+      font-size: 0.47em;
+      font-weight: bold;
+      text-transform: uppercase;
+      white-space: nowrap;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin-left: 2.2em;
+      margin-bottom: 8.8em;
+      transform-origin: left top;
+      transform: rotate(270deg); }
+      #top .container-row .leftbar .menu-message span {
+        font-weight: normal;
+        font-size: 0.8em;
+        margin-left: 1em; }
+    #top .container-row .leftbar .chevron {
+      position: absolute;
+      font-size: 0.5em;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-bottom: 3.5em; }
+  #top .container-row .image-container {
+    float: left;
+    position: relative;
+    background-color: blue; }
+    #top .container-row .image-container img {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      height: auto; }
+    #top .container-row .image-container .date {
+      position: absolute;
+      font-width: bold;
+      font-size: 0.5em;
+      margin-right: 4em;
+      margin-bottom: 6em;
+      right: 0;
+      bottom: 0; }
+    #top .container-row .image-container .article {
+      position: absolute;
+      left: 4.5em;
+      bottom: 2em;
+      width: 20em; }
+      #top .container-row .image-container .article h3 {
+        font-size: 1em; }
+      #top .container-row .image-container .article p {
+        font-size: 0.5em; }
+    #top .container-row .image-container .mail {
+      position: absolute;
+      font-size: 0.9em;
+      margin-right: 2em;
+      margin-top: 1.4em;
+      right: 0;
+      top: 0; }
+
 /*# sourceMappingURL=app.css.map */
