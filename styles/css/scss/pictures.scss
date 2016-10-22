@@ -1,6 +1,6 @@
 #pictures {
   height: 350px;
-  background-color: $main-color;
+  //background-color: $main-color;
   background-image: url("../../images/teachers.jpg");
 
   .title{
@@ -22,6 +22,10 @@
     margin-top: -0.4em;
     overflow: hidden;
 
+  }
+
+  .pic-card:hover{
+    box-shadow: 2px 2px 2px #000;
   }
 
   .pic-card{
