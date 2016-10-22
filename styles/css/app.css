@@ -87,7 +87,7 @@ body {
         left: 0;
         right: 0;
         margin: 0 auto;
-        margin-top: -1.4em;
+        margin-top: -1.2em;
         opacity: 0.9;
         text-shadow: 4px 4px 8px #000; }
       #top .container-row .image-container .on-the-pic .icon {
@@ -210,18 +210,17 @@ body {
         margin-top: -0.5em;
         font-size: 0.9em;
         font-weight: 200; }
-      #pictures .pic-card .pic-article .ellipsis {
+      #pictures .pic-card .pic-article .links {
         text-align: center; }
-        #pictures .pic-card .pic-article .ellipsis i {
+        #pictures .pic-card .pic-article .links i {
           position: absolute;
           font-size: 1.5em;
-          padding: 0.7em;
+          padding: 0.2em;
           width: 35px;
           height: 30px;
           bottom: 0;
           right: 0;
-          color: #333;
-          background-color: #eee; }
+          color: #333; }
   #pictures .scroll-right-btn {
     background-color: white;
     opacity: 0.4;
