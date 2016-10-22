@@ -7,19 +7,20 @@
     color: $font-color-dark;
     width: auto;
     text-transform: uppercase;
-    padding-top: 0.5em;
-    font-size: 2em;
+    padding-top: 0.2em;
+    font-size: 1.5em;
     font-weight: 700;
-    text-shadow: 5px 5px 4px #555;
+    text-shadow: 2px 2px 1px #555;
 
     p {
-      margin-left: 1em;
+      margin-left: 0.4em;
     }
   }
 
-  .container-pic-card {
-    display: flex;
-    margin-left: -190px;
+  .container-pic-cards {
+//    display: flex;
+    margin-top: -0.4em;
+    overflow: hidden;
 
   }
 
@@ -28,16 +29,17 @@
     height: 280px;
     display: flex;
     flex-flow: column wrap;
-    margin-left: 12px;
-    border-radius: 30px;
 
     .image-container{
       position: relative;
+      overflow: hidden;
+      height: 110px;
 
-      img {
+      img.pic {
         width: 100%;
         margin-bottom: 0;
       }
+
 
       .like {
         color: $font-color-light;
@@ -57,18 +59,6 @@
       background-color: $pic-card-color;
       color: $font-color-dark;
       opacity: 0.9;
-
-      .diamond-mark{
-        background-color: $main-color;
-        position: absolute;
-        top:0;
-        left:0;
-        margin-top: -5px;
-        width: 15px;
-        height: 15px;
-        transform-origin: bottom left;
-        transform: rotate(-45deg);
-      }
 
       h3 {
         font-size: 1.5em;

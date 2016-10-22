@@ -1,0 +1,34 @@
+<html>
+  <head>
+  <title>My Now Amazing Webpage</title>
+  <link rel="stylesheet" type="text/css" href="./styles/css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="./styles/css/slick-theme.css"/>
+  </head>
+  <body>
+
+    <div class="autoplay">
+      <li><img src="./images/teachers/guru.jpg" width="10%"></li>
+      <li><img src="./images/teachers/omkar.jpg" width="10%"></li>
+      <li><img src="./images/teachers/thrilok.jpg" width="10%"></li>
+      <li><img src="./images/teachers/guru.jpg" width="10%"></li>
+      <li><img src="./images/teachers/omkar.jpg" width="10%"></li>
+      <li><img src="./images/teachers/thrilok.jpg" width="10%"></li>
+    </div>
+
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="./scripts/slick.min.js"></script>
+
+  <script type="text/javascript">
+  $('.autoplay').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+  });
+
+  </script>
+
+  </body>
+</html>

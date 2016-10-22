@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: 'Catamaran', sans-serif;
   color: #fff; }
@@ -7,6 +8,25 @@ body {
 
 .top-container {
   border-style: solid; }
+
+/*左右の矢印の色を変える*/
+.slick-prev:before,
+.slick-next:before {
+  color: #000; }
+
+/*左右の矢印の位置を変える*/
+.slick-next {
+  right: 20px;
+  z-index: 99; }
+
+.slick-prev {
+  left: 15px;
+  z-index: 100; }
+
+/*スライド数のドットの色を変える*/
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+  color: #fff; }
 
 #top .container-row {
   display: inline-flex;
@@ -93,13 +113,35 @@ body {
       bottom: 0; }
     #top .container-row .image-container .article {
       position: absolute;
-      left: 2em;
-      bottom: 1.2em;
-      width: 20em; }
+      left: 0.5em;
+      bottom: 0.5em;
+      width: 22em;
+      height: 7em;
+      text-shadow: 2px 2px 0px #000; }
+      #top .container-row .image-container .article .background {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        opacity: 0.6;
+        border-radius: 7px;
+        background-color: #333; }
       #top .container-row .image-container .article h3 {
-        font-size: 1em; }
+        position: absolute;
+        top: 0;
+        opacity: 1;
+        font-size: 1em;
+        padding: 0.5em;
+        margin-top: 0.7em;
+        margin-left: 1em;
+        text-weight: 400; }
       #top .container-row .image-container .article p {
-        font-size: 0.5em; }
+        position: absolute;
+        top: 0;
+        opacity: 1;
+        text-weight: 100;
+        font-size: 0.8em;
+        padding: 2em;
+        margin-top: 1.2em; }
     #top .container-row .image-container .mail {
       position: absolute;
       font-size: 2em;
@@ -116,25 +158,25 @@ body {
     color: #333;
     width: auto;
     text-transform: uppercase;
-    padding-top: 0.5em;
-    font-size: 2em;
+    padding-top: 0.2em;
+    font-size: 1.5em;
     font-weight: 700;
-    text-shadow: 5px 5px 4px #555; }
+    text-shadow: 2px 2px 1px #555; }
     #pictures .title p {
-      margin-left: 1em; }
-  #pictures .container-pic-card {
-    display: flex;
-    margin-left: -190px; }
+      margin-left: 0.4em; }
+  #pictures .container-pic-cards {
+    margin-top: -0.4em;
+    overflow: hidden; }
   #pictures .pic-card {
     width: 200px;
     height: 280px;
     display: flex;
-    flex-flow: column wrap;
-    margin-left: 12px;
-    border-radius: 30px; }
+    flex-flow: column wrap; }
     #pictures .pic-card .image-container {
-      position: relative; }
-      #pictures .pic-card .image-container img {
+      position: relative;
+      overflow: hidden;
+      height: 110px; }
+      #pictures .pic-card .image-container img.pic {
         width: 100%;
         margin-bottom: 0; }
       #pictures .pic-card .image-container .like {
@@ -152,16 +194,6 @@ body {
       background-color: #fff;
       color: #333;
       opacity: 0.9; }
-      #pictures .pic-card .pic-article .diamond-mark {
-        background-color: #166eff;
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin-top: -5px;
-        width: 15px;
-        height: 15px;
-        transform-origin: bottom left;
-        transform: rotate(-45deg); }
       #pictures .pic-card .pic-article h3 {
         font-size: 1.5em;
         margin-top: -1px;
@@ -285,14 +317,37 @@ body {
       bottom: 0; }
     #why .container-row .image-container .article {
       position: absolute;
-      color: #333;
-      left: 2em;
-      bottom: 1.2em;
-      width: 20em; }
+      bottom: 0.5em;
+      width: 90%;
+      height: 7em;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      text-shadow: 2px 2px 0px #000; }
+      #why .container-row .image-container .article .background {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        opacity: 0.6;
+        border-radius: 7px;
+        background-color: #333; }
       #why .container-row .image-container .article h3 {
-        font-size: 1em; }
+        position: absolute;
+        top: 0;
+        opacity: 1;
+        font-size: 1em;
+        padding: 0.5em;
+        margin-top: 0.7em;
+        margin-left: 1em;
+        text-weight: 400; }
       #why .container-row .image-container .article p {
-        font-size: 0.5em; }
+        position: absolute;
+        top: 0;
+        opacity: 1;
+        text-weight: 100;
+        font-size: 0.8em;
+        padding: 2em;
+        margin-top: 1.2em; }
     #why .container-row .image-container .mail {
       position: absolute;
       font-size: 2em;
