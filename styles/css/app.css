@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-family: 'Catamaran', sans-serif;
   color: #fff; }
@@ -9,12 +8,10 @@ body {
 .top-container {
   border-style: solid; }
 
-/*左右の矢印の色を変える*/
 .slick-prev:before,
 .slick-next:before {
   color: #000; }
 
-/*左右の矢印の位置を変える*/
 .slick-next {
   right: 20px;
   z-index: 99; }
@@ -23,7 +20,6 @@ body {
   left: 15px;
   z-index: 100; }
 
-/*スライド数のドットの色を変える*/
 .slick-dots li.slick-active button:before,
 .slick-dots li button:before {
   color: #fff; }
@@ -408,6 +404,96 @@ body {
         font-size: 0.8em;
         padding: 2em;
         margin-top: 1.2em; }
+
+#books {
+  height: 380px;
+  background-image: url("../../images/library.jpg");
+  background-size: 100% 100%; }
+  #books .title {
+    color: #fff;
+    width: auto;
+    text-transform: uppercase;
+    padding-top: 0.2em;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-shadow: 2px 2px 1px #000; }
+    #books .title p {
+      margin-left: 0.4em; }
+  #books .container-books {
+    margin-top: 2em;
+    overflow: hidden; }
+  #books .book-card:hover {
+    box-shadow: 2px 2px 2px #000; }
+  #books .book-card {
+    position: relative;
+    width: 200px;
+    height: 260px;
+    display: flex;
+    flex-flow: column wrap; }
+    #books .book-card .image-container {
+      position: absolute;
+      overflow: hidden; }
+      #books .book-card .image-container img.pic {
+        width: 100%;
+        margin-bottom: 0; }
+    #books .book-card .book-article-icons {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      opacity: 0;
+      margin: 0 auto;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0); }
+      #books .book-card .book-article-icons img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        border-radius: 50%;
+        margin: 0 auto;
+        width: 3em;
+        margin-bottom: 1.5em; }
+      #books .book-card .book-article-icons .flipkart {
+        margin-left: 20px; }
+      #books .book-card .book-article-icons .snapdeal {
+        margin-right: 20px; }
+      #books .book-card .book-article-icons p {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-top: 3em;
+        font-size: 1.5em;
+        font-weight: 700;
+        padding: 0.5em; }
+    #books .book-card .book-article-icons:hover {
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.6); }
+  #books .scroll-right-btn {
+    background-color: white;
+    opacity: 0.4;
+    display: inline-block;
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    margin-left: 0.3em;
+    padding-left: 0.2em;
+    width: 1em;
+    position: relative;
+    border-radius: 4px; }
+    #books .scroll-right-btn .chevron {
+      position: absolute;
+      top: 50%;
+      margin-top: -1em; }
+      #books .scroll-right-btn .chevron i {
+        color: #333; }
+  #books .slick-prev:before,
+  #books .slick-next:before {
+    color: #fff; }
 
 #footer {
   background-color: #333;
