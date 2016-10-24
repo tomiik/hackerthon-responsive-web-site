@@ -2,10 +2,12 @@
   height: 350px;
   //background-color: $main-color;
   background-image: url("../../images/teachers.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 
   .title{
     color: $font-color-dark;
-    width: auto;
+    width: 100%;
     text-transform: uppercase;
     padding-top: 0.2em;
     font-size: 1.5em;

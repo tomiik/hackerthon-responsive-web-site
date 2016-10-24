@@ -2,7 +2,8 @@
   height: 380px;
   //background-color: $main-color;
   background-image: url("../../images/library.jpg");
-  background-size: 100% 100%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 
   .title{
     color: $font-color-light;

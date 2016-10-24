@@ -3,7 +3,9 @@ body {
   color: #fff; }
 
 .whole-container {
-  max-width: 780px; }
+  max-width: 90%;
+  border-style: solid;
+  margin: 0 auto; }
 
 .top-container {
   border-style: solid; }
@@ -148,10 +150,12 @@ body {
 
 #pictures {
   height: 350px;
-  background-image: url("../../images/teachers.jpg"); }
+  background-image: url("../../images/teachers.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
   #pictures .title {
     color: #333;
-    width: auto;
+    width: 100%;
     text-transform: uppercase;
     padding-top: 0.2em;
     font-size: 1.5em;
@@ -408,7 +412,8 @@ body {
 #books {
   height: 380px;
   background-image: url("../../images/library.jpg");
-  background-size: 100% 100%; }
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
   #books .title {
     color: #fff;
     width: auto;
