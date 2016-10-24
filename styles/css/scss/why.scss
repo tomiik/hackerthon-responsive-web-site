@@ -2,6 +2,7 @@
   .container-row {
     display: inline-flex;
     flex-flow: row nowrap;
+    width: 100%;
 
     .leftbar {
       position: relative;
@@ -38,6 +39,16 @@
         }
       }
 
+
+      @media screen and (max-width: $screen-sm-min) {
+        .menu-message{
+          font-size: 1.6em;
+          & span {
+            display: none;
+          }
+        }
+      }
+
     }
 
     .image-container{
@@ -71,7 +82,6 @@
           margin-top: -1.4em;
           opacity: 0.9;
           text-shadow: 4px 4px 1px #000;
-
         }
 
         .icon {
@@ -86,20 +96,28 @@
           font-size: 25em;
           opacity: 0.6;
         }
+
+        @media screen and (max-width: $screen-md-min) {
+          .name {
+            font-size: 6em;
+          }
+
+          .icon {
+            font-size: 10em;
+          }
+        }
+
+        @media screen and (max-width: $screen-sm-min) {
+          .name {
+            font-size: 3em;
+          }
+
+          .icon {
+            font-size: 6em;
+          }
+        }
       }
 
-
-      .date {
-        position: absolute;
-        text-align: right;
-
-        font-width: bold;
-        font-size: 0.5em;
-        margin-right: 4em;
-        margin-bottom: 6em;
-        right: 0;
-        bottom: 0;
-      }
 
       .article {
         position: absolute;
@@ -111,6 +129,8 @@
         margin: 0 auto;
         text-shadow: 2px 2px 0px #000;
 
+
+
         .background {
           position: relative;
           width: 100%;
@@ -121,8 +141,6 @@
           //border-style: solid;
           border-radius: 7px;
           background-color: $font-color-dark;
-
-
         }
 
         h3 {
@@ -147,6 +165,15 @@
           margin-top: 1.2em;
         }
       }
+
+      @media screen and (max-width: $screen-sm-min) {
+        .article{
+          display: none;
+        }
+      }
+
+
+
 
       .mail {
         position: absolute;

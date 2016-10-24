@@ -2,13 +2,13 @@
   background-color: $font-color-dark;
   color: $font-color-light;
 
-  .container-row {
+  .container {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
 
     div {
+      display:block;
       margin: 0 auto;
-      flex: 1;
 
       h2 {
         margin-left: 1em;

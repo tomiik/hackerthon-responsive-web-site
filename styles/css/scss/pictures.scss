@@ -1,8 +1,14 @@
+@media screen and (max-width: 1420px) {
+  #pictures {
+    background-size: auto 100%;
+  }
+}
+
 #pictures {
   height: 350px;
   //background-color: $main-color;
   background-image: url("../../images/teachers.jpg");
-  background-size: 100% auto;
+  background-size: auto 100%;
   background-repeat: no-repeat;
 
   .title{
@@ -35,6 +41,7 @@
     height: 280px;
     display: flex;
     flex-flow: column wrap;
+    margin: 0 auto;
 
     .image-container{
       position: relative;

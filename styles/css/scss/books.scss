@@ -1,9 +1,15 @@
+
 #books {
   height: 380px;
   //background-color: $main-color;
   background-image: url("../../images/library.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+
+  @media screen and (max-width: 660px) {
+      background-size: auto 100%;
+  }
+
 
   .title{
     color: $font-color-light;
@@ -36,6 +42,7 @@
     height: 260px;
     display: flex;
     flex-flow: column wrap;
+    margin: 0 auto;
 
     .image-container{
       position: absolute;

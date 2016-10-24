@@ -2,6 +2,7 @@
   .container-row {
     display: inline-flex;
     flex-flow: row nowrap;
+    width: 100%;
 
     .leftbar {
       position: relative;
@@ -37,6 +38,16 @@
           margin-left: 0.5em;
         }
       }
+
+      @media screen and (max-width: $screen-sm-min) {
+        .menu-message {
+          font-size: 1.6em;
+          & span{
+            display: none;
+          }
+        }
+      }
+
 
       .chevron {
         position: absolute;
@@ -94,6 +105,17 @@
           font-size: 20em;
           opacity: 0.8;
           transform: rotate(-20deg);
+        }
+
+        @media screen and (max-width: $screen-sm-min) {
+          .name {
+            font-size: 4em;
+            margin-top: -1.2em;
+          }
+
+          .icon {
+            font-size: 10em;
+          }
         }
       }
 
@@ -165,4 +187,7 @@
       }
     }
   }
+
+
+
 }

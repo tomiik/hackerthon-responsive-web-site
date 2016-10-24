@@ -28,7 +28,8 @@ body {
 
 #top .container-row {
   display: inline-flex;
-  flex-flow: row nowrap; }
+  flex-flow: row nowrap;
+  width: 100%; }
   #top .container-row .leftbar {
     position: relative;
     text-align: center;
@@ -56,6 +57,11 @@ body {
         font-weight: 100;
         font-size: 0.4em;
         margin-left: 0.5em; }
+    @media screen and (max-width: 768px) {
+      #top .container-row .leftbar .menu-message {
+        font-size: 1.6em; }
+        #top .container-row .leftbar .menu-message span {
+          display: none; } }
     #top .container-row .leftbar .chevron {
       position: absolute;
       font-size: 1em;
@@ -100,6 +106,12 @@ body {
         font-size: 20em;
         opacity: 0.8;
         transform: rotate(-20deg); }
+      @media screen and (max-width: 768px) {
+        #top .container-row .image-container .on-the-pic .name {
+          font-size: 4em;
+          margin-top: -1.2em; }
+        #top .container-row .image-container .on-the-pic .icon {
+          font-size: 10em; } }
     #top .container-row .image-container .date {
       position: absolute;
       text-align: right;
@@ -148,10 +160,13 @@ body {
       right: 0;
       top: 0; }
 
+@media screen and (max-width: 1420px) {
+  #pictures {
+    background-size: auto 100%; } }
 #pictures {
   height: 350px;
   background-image: url("../../images/teachers.jpg");
-  background-size: 100% auto;
+  background-size: auto 100%;
   background-repeat: no-repeat; }
   #pictures .title {
     color: #333;
@@ -172,7 +187,8 @@ body {
     width: 200px;
     height: 280px;
     display: flex;
-    flex-flow: column wrap; }
+    flex-flow: column wrap;
+    margin: 0 auto; }
     #pictures .pic-card .image-container {
       position: relative;
       overflow: hidden;
@@ -242,7 +258,8 @@ body {
 
 #why .container-row {
   display: inline-flex;
-  flex-flow: row nowrap; }
+  flex-flow: row nowrap;
+  width: 100%; }
   #why .container-row .leftbar {
     position: relative;
     text-align: center;
@@ -270,6 +287,11 @@ body {
         font-weight: 100;
         font-size: 0.4em;
         margin-left: 0.5em; }
+    @media screen and (max-width: 768px) {
+      #why .container-row .leftbar .menu-message {
+        font-size: 1.6em; }
+        #why .container-row .leftbar .menu-message span {
+          display: none; } }
   #why .container-row .image-container {
     position: relative;
     background-color: blue;
@@ -306,15 +328,16 @@ body {
         margin-left: 0.2em;
         font-size: 25em;
         opacity: 0.6; }
-    #why .container-row .image-container .date {
-      position: absolute;
-      text-align: right;
-      font-width: bold;
-      font-size: 0.5em;
-      margin-right: 4em;
-      margin-bottom: 6em;
-      right: 0;
-      bottom: 0; }
+      @media screen and (max-width: 992px) {
+        #why .container-row .image-container .on-the-pic .name {
+          font-size: 6em; }
+        #why .container-row .image-container .on-the-pic .icon {
+          font-size: 10em; } }
+      @media screen and (max-width: 768px) {
+        #why .container-row .image-container .on-the-pic .name {
+          font-size: 3em; }
+        #why .container-row .image-container .on-the-pic .icon {
+          font-size: 6em; } }
     #why .container-row .image-container .article {
       position: absolute;
       bottom: 0.5em;
@@ -348,6 +371,9 @@ body {
         font-size: 0.8em;
         padding: 2em;
         margin-top: 1.2em; }
+    @media screen and (max-width: 768px) {
+      #why .container-row .image-container .article {
+        display: none; } }
     #why .container-row .image-container .mail {
       position: absolute;
       font-size: 2em;
@@ -358,7 +384,15 @@ body {
 
 #subjects {
   background-image: url("../../images/classroom.jpg");
-  height: 600px; }
+  height: 600px;
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+  @media screen and (max-width: 992px) {
+    #subjects {
+      height: 450px; } }
+  @media screen and (max-width: 768px) {
+    #subjects {
+      height: 220px; } }
   #subjects .container-row li {
     position: relative;
     height: 600px; }
@@ -375,14 +409,22 @@ body {
         margin-top: 1em;
         opacity: 0.9;
         text-shadow: 0px 0px 6px #000; }
+      @media screen and (max-width: 992px) {
+        #subjects .container-row li .on-the-pic .name {
+          font-size: 5em; } }
+      @media screen and (max-width: 768px) {
+        #subjects .container-row li .on-the-pic .name {
+          font-size: 2em;
+          margin-top: 2em; } }
     #subjects .container-row li .article {
       position: absolute;
-      bottom: 0.5em;
+      bottom: 0;
       width: 50em;
       height: 7em;
       left: 0;
       right: 0;
       margin: 0 auto;
+      margin-bottom: 1em;
       text-shadow: 2px 2px 0px #000; }
       #subjects .container-row li .article .background {
         position: relative;
@@ -408,12 +450,18 @@ body {
         font-size: 0.8em;
         padding: 2em;
         margin-top: 1.2em; }
+    @media screen and (max-width: 992px) {
+      #subjects .container-row li .article {
+        display: none; } }
 
 #books {
   height: 380px;
   background-image: url("../../images/library.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat; }
+  @media screen and (max-width: 660px) {
+    #books {
+      background-size: auto 100%; } }
   #books .title {
     color: #fff;
     width: auto;
@@ -434,7 +482,8 @@ body {
     width: 200px;
     height: 260px;
     display: flex;
-    flex-flow: column wrap; }
+    flex-flow: column wrap;
+    margin: 0 auto; }
     #books .book-card .image-container {
       position: absolute;
       overflow: hidden; }
@@ -503,20 +552,20 @@ body {
 #footer {
   background-color: #333;
   color: #fff; }
-  #footer .container-row {
+  #footer .container {
     display: flex;
-    flex-flow: row nowrap; }
-    #footer .container-row div {
-      margin: 0 auto;
-      flex: 1; }
-      #footer .container-row div h2 {
+    flex-flow: row wrap; }
+    #footer .container div {
+      display: block;
+      margin: 0 auto; }
+      #footer .container div h2 {
         margin-left: 1em;
         font-size: 1.5em; }
-      #footer .container-row div ul {
+      #footer .container div ul {
         margin-left: 0.5em;
         font-size: 1em;
         font-weight: 100; }
-        #footer .container-row div ul a {
+        #footer .container div ul a {
           color: #fff; }
 
 /*# sourceMappingURL=app.css.map */

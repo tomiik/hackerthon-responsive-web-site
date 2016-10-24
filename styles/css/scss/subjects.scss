@@ -1,6 +1,15 @@
 #subjects{
   background-image: url("../../images/classroom.jpg");
   height: 600px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: $screen-md-min) {
+    height: 450px;
+  }
+  @media screen and (max-width: $screen-sm-min) {
+    height: 220px;
+  }
 
   .container-row {
       li {
@@ -22,16 +31,29 @@
             opacity: 0.9;
             text-shadow: 0px 0px 6px #000;
           }
+          @media screen and (max-width: $screen-md-min) {
+            .name {
+              font-size: 5em;
+            }
+          }
+          @media screen and (max-width: $screen-sm-min) {
+            .name {
+              font-size: 2em;
+              margin-top: 2em;
+            }
+          }
         }
+
 
         .article {
           position: absolute;
-          bottom: 0.5em;
+          bottom: 0;
           width: 50em;
           height: 7em;
           left: 0;
           right: 0;
           margin: 0 auto;
+          margin-bottom: 1em;
           text-shadow: 2px 2px 0px #000;
 
           .background {
@@ -68,6 +90,11 @@
             font-size: 0.8em;
             padding: 2em;
             margin-top: 1.2em;
+          }
+        }
+        @media screen and (max-width: $screen-md-min) {
+          .article {
+            display: none;
           }
         }
 
